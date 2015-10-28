@@ -1,0 +1,46 @@
+/*GERAL*/
+body { background:rgba(77, 182, 172, 0.7); font-family: verdana; }
+.container { background:#FFF; margin: 0 auto; width:70%; height: 100%; position: relative; }
+.div-center { margin: 0 auto; width: inherit; }
+
+/*HOME*/
+.button{ width:100px; background:#3399cc; display:block; margin:0 auto; margin-top:1%; padding:10px; text-align:center; text-decoration:none; color:#fff; cursor:pointer; transition:background .3s; -webkit-transition:background .3s; }
+.button:hover{ background:#2288bb; }
+#login{ width:400px; margin:0 auto; margin-top:8px; margin-bottom:2%; transition:opacity 1s; -webkit-transition:opacity 1s; }
+#triangle{ width:0; border-top:12x solid transparent; border-right:12px solid transparent; border-bottom:12px solid #3399cc; border-left:12px solid transparent; margin:0 auto; }
+#login h1{ background:#3399cc; padding:20px 0; font-size:140%; font-weight:300; text-align:center; color:#fff; }
+.form-home{ background:#f0f0f0; padding:6% 4%; }
+.usuario,.senha{ width:92%; background:#fff; margin-bottom:4%; border:1px solid #ccc; padding:4%; font-family:'Open Sans',sans-serif; font-size:95%; color:#555; }
+.enviar-home , input[type="button"]{ width:100%; background:#3399cc; border:0; padding:4%; font-family:'Open Sans',sans-serif; font-size:100%; color:#fff; cursor:pointer; transition:background .3s; -webkit-transition:background .3s; }
+.enviar-home:hover , input[type="button"]:hover{ background:#2288bb; }
+
+/*CRUD*/
+.div-center .formulario p { margin: 5px 0; }
+.p-img { font-size: 11px; }
+
+/*MENU*/
+nav.menu-crud { text-align: center; margin: 0 auto 30px; padding: 15px 0 0; overflow: hidden; max-width: 700px; }
+nav.menu-crud div.logo { float: left; width: 250px; height: auto; }
+nav.menu-crud div.logo img{ width: 250px; height: auto; }
+nav.menu-crud .container-menu { max-width: 700px; float: left; }
+nav.menu-crud .main-menu { margin-bottom: 10px; text-align: left;}
+nav.menu-crud form:nth-child(2) { margin-bottom: 0; }
+nav.menu-crud button.btn-main { font-size: 15px; padding: 4px 7px 4px; }
+nav.menu-crud .btn-menu { border-radius: 11px; border:1px solid #4DB6AC; font-family: Arial; color: #fff; font-size: 13px; background: #4DB6AC; padding: 3px 6px 3px; text-decoration: none; }
+nav.menu-crud .btn-menu:hover { background: #F06292; text-decoration: none; border:1px solid #F06292; }
+nav.menu-crud div.logout { float: right; }
+nav.menu-crud div.logout a { text-decoration: none; color: rgb(77, 182, 172)}
+
+/*FORMULARIOS*/
+.formulario p { margin: 5px 0;}
+.inputs-form { border-radius: 4px; border: 1px solid #ccc; }
+.btn-forms { border-radius: 4px; border:1px solid #4DB6AC; font-family: Arial; color: #fff; font-size: 13px; background: #4DB6AC; padding: 2px 5px 2px; text-decoration: none; }
+.btn-forms:hover { background: #F06292; text-decoration: none; border:1px solid #F06292; }
+
+/*TABELAS*/
+.tabela{ margin: 0 auto; width:100%; border:solid 1px; text-align:center; border-collapse:collapse; }
+.tabela thead{ background:rgba(77, 182, 172, 0.7); }
+.tabela thead th:nth-child(1){ width:100px; }
+.tabela tbody tr{ border:solid 1px; height:30px; cursor:pointer; width: 100%; }
+.tabela tbody tr:hover { background:rgba(77, 182, 172, 0.3); }
+.tabela tr:nth-child(even) { background: rgba(233, 233, 233, 0.5); }
