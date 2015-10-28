@@ -1,4 +1,4 @@
-# projeto-integrador-2
+# Projeto Integrador - 2 semestre
 
 //*Português*//
 O projeto consiste em um sistema de cadastro e gerenciamento de um site de E-commerce.
