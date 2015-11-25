@@ -11,7 +11,8 @@
 		<div class="div-center">
 			<h1>Busca de Produtos</h1>
 			<form action="busca.php" method="POST" class="formulario">
-			   	<p>Nome: <input type="text" name="nomeProdutoBusca"/></p>
+			   	<p><label for="nomeProdutoBusca">Nome:</label>
+                <input type="text" name="nomeProdutoBusca" required/></p>
 				<input type="submit" value="Enviar" class="btn-forms" id="submit">
 				<input type="reset" value="Limpar dados" class="btn-forms" id="submit">
 			</form>			
@@ -37,7 +38,6 @@
 					          $imagemDoProduto = "<img src='data:image/jpeg;base64,".base64_encode($resultado['imagem'])."' width='30' heigth='30' />";
 					        } else {
 					          $imagemDoProduto = "<img src='css/img/logo_lotus_padrao.png' width='30' heigth='30' />";
-;
 					        }
 					        echo "
 					        <tr>

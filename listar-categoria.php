@@ -43,8 +43,8 @@
                 <p style="display:none;"><input id="id-cat" type="number" name="idAtCat"/></p>
                 <p>Novo nome: <input id="nome-cat" type="text" name="nomeAtCat"/></p>
                 <p>Nova descrição: <input id="desc-cat"type="text" name="descAtCat"/></p>
-              <input type="submit" value="Enviar" class="btn-forms">
-              <input type="reset" value="Limpar dados" class="btn-forms">
+              <input type="submit" value="Enviar" class="btn-forms" id="submit">
+              <input type="reset" value="Limpar dados" class="btn-forms" id="submit">
             </form>
           </div>
         </div>

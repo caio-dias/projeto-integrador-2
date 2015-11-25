@@ -67,8 +67,8 @@
                     <option value="0">Inativo</option>
                   </select>
                 </p>
-            <input type="submit" value="Enviar" class="btn-forms">
-            <input type="reset" value="Limpar dados" class="btn-forms">
+                <input type="submit" value="Enviar" class="btn-forms" id="submit">
+                <input type="reset" value="Limpar dados" class="btn-forms" id="submit">
           </form>
         </div>
       </div>
