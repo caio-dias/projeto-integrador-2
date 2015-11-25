@@ -6,11 +6,26 @@
       session_start();
       ini_set('odbc.defaultlrl',9000000);
       include 'funcoes.php';
-      $consulta = odbc_exec($connect,"SELECT idProduto, nomeProduto, descProduto, precProduto, qtdMinEstoque, imagem, nomeCategoria FROM Produto inner join Categoria on (produto.idCategoria = categoria.idCategoria)");
+      $condicoes = (!isset($_POST['filtro'])) ? 'idProduto' : $_POST['filtro'];
+      $consulta = odbc_exec($connect,"SELECT idProduto, nomeProduto, descProduto, precProduto, qtdMinEstoque, imagem, nomeCategoria FROM Produto inner join Categoria on (produto.idCategoria = categoria.idCategoria) ORDER BY $condicoes");
       include 'menu.php';
     if (isset($_SESSION['usuario'])) { ?>
       <div class="div-center listas">
         <h1>Listagem de produtos</h1>
+        <form action="listar-produto.php" method="POST" class="filtro">
+          <label for="filtro">Ordenar por:</label>
+          <select name="filtro">
+            <option value="nomeProduto">Nome A - Z</option>
+            <option value="nomeProduto DESC">Nome Z - A</option>
+            <option value="precProduto">Preço Crescente</option>
+            <option value="precProduto DESC">Preço Decrescente</option>
+            <option value="nomeCategoria">Categoria A - Z</option>
+            <option value="nomeCategoria DESC">Categoria Z - A</option>
+            <option value="qtdMinEstoque">Estoque Crescente</option>
+            <option value="qtdMinEstoque DESC">Estoque Decrescente</option>
+          </select>
+        <input type="submit" value="Enviar" class="btn-forms" id="submit">
+      </form>
         <table class="tabela">
             <thead>
                 <tr>
